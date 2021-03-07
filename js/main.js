@@ -3,11 +3,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const movieDB = {
     movies: [
-      "Логан",
-      "Лига справедливости",
-      "Ла-ла лэнд",
-      "Одержимость",
-      "Скотт Прилигрим против...",
+      "Logan",
+      "Justice League",
+      "La la land",
+      "Obsession",
+      "Scott Priligrim vs. ...",
     ],
   };
 
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         newFilm = `${newFilm.substring(0, 22)}...`;
       }
       if (favorite) {
-        console.log("Добавлен любимый фильм");
+        console.log("add favorite movie");
       }
       movieDB.movies.push(newFilm);
       sortArr(movieDB.movies);
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const makeChanges = () => {
-    genre.textContent = "драма";
+    genre.textContent = "drama";
     poster.style.backgroundImage = "url(../img/mars.webp)";
   };
 
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  deleteAdv(adv);
+  //deleteAdv(adv);
   makeChanges();
   createMovieList(movieDB.movies, movieList);
 });
